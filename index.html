@@ -1,0 +1,64 @@
+<!--
+ * @Author: ZhipengTang
+ * @Date: 2020-06-08 09:23:36
+ * @LastEditors: ZhipengTang
+ * @LastEditTime: 2020-06-08 14:10:29
+ * @FilePath: /demo-scroll/index.html
+--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Document</title>
+  <style>
+    html, body, .listContainer {
+      margin: 0;
+      padding: 0;
+    }
+    .listContainer li {
+      list-style: none;
+      height: 120px;
+      font-size: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff;
+    }
+    .listContainer li:nth-child(2n) {
+      background-color: #FA5120;
+    }
+    .listContainer li:nth-child(2n+1) {
+      background-color: #4FDBC2;
+    }
+  </style>
+</head>
+<body>
+  <div class="scroll-container">
+    <ul id="listContainer" class="listContainer">
+      <li id="item-first"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li id="item-last"></li>
+    </ul>
+  </div>
+</body>
+<script src="./scroll.js"></script>
+<script src="./index.js"></script>
+</html>
